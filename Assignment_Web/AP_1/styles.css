@@ -1,18 +1,30 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     color: whitesmoke;
-    background:linear-gradient(purple, black) ;
+    background: linear-gradient(to bottom, purple, black); /* Smooth gradient */
 }
 
+/* Header Styling */
 header {
-
-    background:linear-gradient(rgb(28, 4, 28), rgb(77, 72, 77));
+    background: linear-gradient(to bottom, rgb(28, 4, 28), rgb(77, 72, 77)); /* Gradient */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     padding: 1em;
     text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
 }
 
 header nav a {
@@ -20,20 +32,44 @@ header nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth effect */
 }
 
 header nav a:hover {
+    color: lightcoral; /* Slight color change on hover */
     text-decoration: underline;
 }
 
+/* Main Content Styling */
 main {
     padding: 2em;
     text-align: center;
+    font-size: 1.2rem; /* Adjust font size for readability */
+    line-height: 1.6;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1em;
-    background:linear-gradient( rgb(77, 72, 77),rgb(28, 4, 28));
+    background: linear-gradient(to top, rgb(77, 72, 77), rgb(28, 4, 28)); /* Reverse gradient for footer */
     color: white;
+    font-size: 0.9rem;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
