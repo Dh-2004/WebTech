@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background:linear-gradient(purple, black) ;
+}
+
+header {
+
+    background:linear-gradient(rgb(28, 4, 28), rgb(77, 72, 77));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background:linear-gradient( rgb(77, 72, 77),rgb(28, 4, 28));
+    color: white;
+}
