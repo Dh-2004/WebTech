@@ -1,20 +1,23 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styling */
+
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     color: whitesmoke;
     background: linear-gradient(to bottom, purple, black); /* Smooth gradient */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
-/* Header Styling */
+
 header {
     background: linear-gradient(to bottom, rgb(28, 4, 28), rgb(77, 72, 77)); /* Gradient */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -32,23 +35,23 @@ header nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth effect */
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
 
 header nav a:hover {
-    color: lightcoral; /* Slight color change on hover */
+    color: lightcoral; 
     text-decoration: underline;
 }
 
-/* Main Content Styling */
 main {
     padding: 2em;
     text-align: center;
-    font-size: 1.2rem; /* Adjust font size for readability */
+    font-size: 1.2rem; 
     line-height: 1.6;
+    flex: 1;
 }
 
-/* Footer Styling */
+
 footer {
     text-align: center;
     padding: 1em;
@@ -57,11 +60,11 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Media Query for Mobile Responsiveness */
+
 @media (max-width: 600px) {
     main {
         padding: 1em;
-        font-size: 1rem; /* Adjust font size for small screens */
+        font-size: 1rem; 
     }
 
     header nav a {
