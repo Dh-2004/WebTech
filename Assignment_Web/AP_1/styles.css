@@ -57,6 +57,7 @@ footer {
     padding: 16px;
     background: linear-gradient(to top, rgb(77, 72, 77), rgb(28, 4, 28)); /* Reverse gradient for footer */
     color: white;
+    clear:both;
     font-size: 14px;
 }
 
